@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "name": "Soniya Rani",
+      "email": "soniya.rani@college.edu",
+      "password": "pass123",
+      "enrollment": "06801192024",
+      "branch": "AIML",
+      "sem": 4
+    },
+    {
+      "name": "Rahul Kumar",
+      "email": "rahul.kumar@college.edu",
+      "password": "pass123",
+      "enrollment": "06801192025",
+      "branch": "IT1",
+      "sem": 4
+    },
+    {
+      "name": "Priya Sharma",
+      "email": "priya.sharma@college.edu",
+      "password": "pass123",
+      "enrollment": "06801192026",
+      "branch": "IT2",
+      "sem": 4
+    },
+    {
+      "name": "Arjun Singh",
+      "email": "arjun.singh@college.edu",
+      "password": "pass123",
+      "enrollment": "06801192027",
+      "branch": "AIML",
+      "sem": 4
+    },
+    {
+      "name": "Neha Verma",
+      "email": "neha.verma@college.edu",
+      "password": "pass123",
+      "enrollment": "06801192028",
+      "branch": "IT1",
+      "sem": 4
+    },
+    {
+      "name": "Amit Patel",
+      "email": "amit.patel@college.edu",
+      "password": "pass123",
+      "enrollment": "06801192029",
+      "branch": "IT2",
+      "sem": 4
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My DevOps Status</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <span class="topbar-title">My DevOps Status ...</span>
+    <button class="logout-btn" onclick="logout()" title="Logout">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+      </svg>
+    </button>
+  </header>
+
+  <main class="dash-content" id="dashContent">
+    <!-- Rendered by dashboard.js -->
+    <p style="text-align:center;color:#9ca3af;padding-top:60px;">Loading...</p>
+  </main>
+
+  <div class="dash-footer" id="dashFooter"></div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
