@@ -7,7 +7,7 @@
  */
 
 /* ─── Configuration ─────────────────────────────────────────── */
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = 'https://devops-portal-euh5.onrender.com/api';
 
 /* ─── Mock client-side DB (fallback / standalone demo) ──────── */
 const MOCK_STUDENTS = [
