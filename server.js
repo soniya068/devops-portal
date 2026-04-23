@@ -28,7 +28,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve frontend from ../frontend (convenient for local dev)
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, '..')));
 
 /* ─── DB helpers ─────────────────────────────────────────────── */
 function readDB() {
@@ -127,7 +127,7 @@ app.get('/api/students', (req, res) => {
 
 /* ─── Catch-all: serve index.html for SPA navigation ─────────── */
 app.get('*', (_req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/index.html'));
+  res.sendFile(path.join(__dirname, '../index.html'));
 });
 
 /* ─── Start ──────────────────────────────────────────────────── */
