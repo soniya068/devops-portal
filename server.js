@@ -28,7 +28,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve frontend from ../frontend (convenient for local dev)
-app.use(express.static(path.join(__dirname, '..')));
+app.use(express.static(__dirname));
 
 /* ─── DB helpers ─────────────────────────────────────────────── */
 function readDB() {
@@ -127,12 +127,12 @@ app.get('/api/students', (req, res) => {
 
 /* ─── Catch-all: serve index.html for SPA navigation ─────────── */
 app.get('*', (_req, res) => {
-  res.sendFile(path.join(__dirname, '../index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 /* ─── Start ──────────────────────────────────────────────────── */
 app.listen(PORT, () => {
   console.log(`✅  DevOps Portal backend running at http://localhost:${PORT}`);
-  console.log(`📂  Serving frontend from ../frontend`);
+  console.log(`📂  Serving frontend from root`);
   console.log(`📦  Database: ${DB_PATH}`);
 });
